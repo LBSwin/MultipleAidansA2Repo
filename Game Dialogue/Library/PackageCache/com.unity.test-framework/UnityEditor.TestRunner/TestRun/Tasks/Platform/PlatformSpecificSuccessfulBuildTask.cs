@@ -1,18 +1,3 @@
-using System;
-using System.Collections;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun.Tasks.Platform
-{
-    internal class PlatformSpecificSuccessfulBuildTask : TestTaskBase
-    {
-        public override IEnumerator Execute(TestJobData testJobData)
-        {
-            if ((testJobData.PlayerBuildOptions.options & BuildOptions.AutoRunPlayer) != 0)
-            {
-                testJobData.PlatformSpecificSetup.PostSuccessfulBuildAction();
-            }
-
-            yield return null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fb58a6b9638f0ed87e8f012c199fd4c27b61a25db245c2f7813fcf8c4c4cf35
+size 513

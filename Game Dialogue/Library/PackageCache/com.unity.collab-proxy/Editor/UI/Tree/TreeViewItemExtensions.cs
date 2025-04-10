@@ -1,25 +1,3 @@
-using UnityEditor.IMGUI.Controls;
-
-using PlasticGui;
-using Unity.PlasticSCM.Editor.Views.PendingChanges;
-
-namespace Unity.PlasticSCM.Editor.UI.Tree
-{
-    internal static class TreeViewItemExtensions
-    {
-        internal static IPlasticTreeNode GetPlasticTreeNode(this TreeViewItem item)
-        {
-            if (item is ChangelistTreeViewItem)
-            {
-                return ((ChangelistTreeViewItem)item).Changelist;
-            }
-
-            if (item is ChangeCategoryTreeViewItem)
-            {
-                return ((ChangeCategoryTreeViewItem)item).Category;
-            }
-
-            return ((ChangeTreeViewItem)item).ChangeInfo;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:978b04a1a0061f526c5230342c0e4827108d06fe0633575d16bdda38f7008c07
+size 667

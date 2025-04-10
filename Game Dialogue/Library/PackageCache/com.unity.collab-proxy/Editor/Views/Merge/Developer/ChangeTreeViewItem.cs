@@ -1,19 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-using PlasticGui.WorkspaceWindow.Merge;
-
-namespace Unity.PlasticSCM.Editor.Views.Merge.Developer
-{
-    internal class ChangeTreeViewItem : TreeViewItem
-    {
-        internal MergeChangeInfo ChangeInfo { get; private set; }
-
-        internal ChangeTreeViewItem(int id, MergeChangeInfo change)
-            : base(id, 1)
-        {
-            ChangeInfo = change;
-
-            displayName = id.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0597b663c09f16e638d367e32849c13b5cfc15fc3cd81fcbf42b4bb535917456
+size 460

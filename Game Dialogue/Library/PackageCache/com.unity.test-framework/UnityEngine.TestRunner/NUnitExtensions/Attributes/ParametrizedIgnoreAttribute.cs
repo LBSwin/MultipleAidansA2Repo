@@ -1,24 +1,3 @@
-using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal.Commands;
-using System;
-
-namespace UnityEngine.TestTools
-{
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
-    public class ParametrizedIgnoreAttribute : NUnitAttribute, IWrapTestMethod
-    {
-        public object[] Arguments { get; }
-        public string Reason { get; set; }
-
-        public ParametrizedIgnoreAttribute(params object[] Arguments)
-        {
-            this.Arguments = Arguments;
-        }
-
-        public TestCommand Wrap(TestCommand command)
-        {
-            return new ParametrizedIgnoreCommand(command, Arguments, Reason);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f1c71843831a1110b872cd5ebd79f9548d0b522c46c301a92c0ed9ea20c6f65
+size 695

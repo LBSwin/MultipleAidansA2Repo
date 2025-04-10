@@ -1,26 +1,3 @@
-using System;
-using NUnit.Framework;
-using UnityEngine.Rendering;
-
-namespace UnityEngine.Rendering.Tests
-{
-    internal class CopyPasteTestComponent1 : VolumeComponent
-    {
-        public FloatParameter p1 = new FloatParameter(0f);
-        public IntParameter p2 = new IntParameter(0);
-
-        public CopyPasteTestComponent1 WithModifiedValues()
-        {
-            p1.value = 123.0f;
-            p2.value = 123;
-            return this;
-        }
-
-        public void AssertEquality(CopyPasteTestComponent1 other, Action<object, object> assertionFunction)
-        {
-            Assert.AreEqual(GetType(), other.GetType());
-            assertionFunction(p1.value, other.p1.value);
-            assertionFunction(p2.value, other.p2.value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b08b0c190cbefc2cc7f8d45b1bdf2524a8065c7121b55eb72fe55203078952a
+size 760

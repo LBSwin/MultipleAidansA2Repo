@@ -1,10 +1,3 @@
-using Unity.AI.Navigation.Editor.Converter;
-
-namespace Unity.AI.Navigation.Updater
-{
-    internal sealed class BuiltInToNavMeshSurfaceConverterContainer : SystemConverterContainer
-    {
-        public override string name => "NavMesh Updater";
-        public override string info => "The NavMesh updater performs the following tasks:\n* Converts scenes baked with the built-in NavMesh to the component-based version.\n* Replaces Navigation Static flags with NavMeshModifier components.";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:56d32e9df406bda6feeecc836c3010a083c16f38b56cf398159bfe5a92bfccb6
+size 496

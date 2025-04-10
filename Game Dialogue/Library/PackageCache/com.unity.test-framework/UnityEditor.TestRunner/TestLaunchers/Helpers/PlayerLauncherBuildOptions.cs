@@ -1,24 +1,3 @@
-using System;
-using System.Text;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class PlayerLauncherBuildOptions
-    {
-        public BuildPlayerOptions BuildPlayerOptions;
-        public string PlayerDirectory;
-
-        public override string ToString()
-        {
-            var str = new StringBuilder();
-            str.AppendLine("locationPathName = " + BuildPlayerOptions.locationPathName);
-            str.AppendLine("target = " + BuildPlayerOptions.target);
-            str.AppendLine("scenes = " + string.Join(", ", BuildPlayerOptions.scenes));
-            str.AppendLine("assetBundleManifestPath = " + BuildPlayerOptions.assetBundleManifestPath);
-            str.AppendLine("options.Development = " + ((BuildPlayerOptions.options & BuildOptions.Development) != 0));
-            str.AppendLine("options.AutoRunPlayer = " + ((BuildPlayerOptions.options & BuildOptions.AutoRunPlayer) != 0));
-            str.AppendLine("options.ForceEnableAssertions = " + ((BuildPlayerOptions.options & BuildOptions.ForceEnableAssertions) != 0));
-            return str.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d3963ab1a9557b2bbee3f498a05b7c15e5745fd32ee8cb16ed4083c8d4c92df
+size 1103

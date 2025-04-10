@@ -1,27 +1,3 @@
-using System;
-
-using UnityEditor;
-
-namespace Unity.PlasticSCM.Editor.UI
-{
-    internal static class ShowWindow
-    {
-        internal static PlasticWindow Plastic()
-        {
-            PlasticWindow window = EditorWindow.GetWindow<PlasticWindow>(
-                UnityConstants.PLASTIC_WINDOW_TITLE,
-                true,
-                mConsoleWindowType,
-                mProjectBrowserType);
-
-            window.UpdateWindowIcon(PlasticPlugin.GetNotificationStatus());
-
-            return window;
-        }
-
-        static Type mConsoleWindowType = typeof(EditorWindow).
-            Assembly.GetType("UnityEditor.ConsoleWindow");
-        static Type mProjectBrowserType = typeof(EditorWindow).
-            Assembly.GetType("UnityEditor.ProjectBrowser");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a30c75211e28519c6ca5aa2b36ecee9e864469083659920a5ed2567347a1509
+size 767

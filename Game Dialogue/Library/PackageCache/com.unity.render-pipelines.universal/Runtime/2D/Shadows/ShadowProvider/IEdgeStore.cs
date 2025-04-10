@@ -1,12 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Unity.Collections;
-
-namespace UnityEngine.Rendering.Universal
-{
-    internal interface IEdgeStore
-    {
-        NativeArray<ShadowEdge> GetOutsideEdges(NativeArray<Vector3> vertices, NativeArray<int> indices);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1b67cd95ad05f302f91c86c7e954c9a2db65d567c766fd360ad32dae4d0df74
+size 303

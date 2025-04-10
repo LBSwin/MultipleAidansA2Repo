@@ -1,16 +1,3 @@
-namespace Unity.AI.Navigation.Editor.Converter
-{
-    /// <summary>
-    /// A structure holding the information for each Item that needs to be Converted.
-    /// Descriptor = The ConverterItemDescriptor this item contain.
-    /// Index = The index for this item in the list of converter items.
-    /// </summary>
-    internal struct ConverterItemInfo
-    {
-        /// <summary> The ConverterItemDescriptor this item contain. </summary>
-        public ConverterItemDescriptor descriptor { get; internal set; }
-
-        /// <summary> The index for this item in the list of converter items. </summary>
-        public int index { get; internal set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3746c6032d8905806cd160a5f516a8897d27ba66c2e8f0b705743e73cf42aa43
+size 655
